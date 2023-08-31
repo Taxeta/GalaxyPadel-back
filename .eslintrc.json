@@ -14,6 +14,7 @@
           "error",
           "interface"
         ],
+        "no-implicit-coercion": "off",
         "new-cap": [
           "error",
           {
