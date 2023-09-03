@@ -1,5 +1,6 @@
-import debugCreator from "debug";
 import "dotenv/config";
+
+import debugCreator from "debug";
 import startServer from "./server/startServer.js";
 
 const debug = debugCreator("rackets:server:start");
