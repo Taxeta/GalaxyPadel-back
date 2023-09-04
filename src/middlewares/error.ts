@@ -3,13 +3,13 @@ import CustomError from "../CustomError/CustomError.js";
 
 export const endpointNotFound = (
   _req: Request,
-  _res: Response,
+  res: Response,
   next: NextFunction,
 ) => {
   const newCustomError = new CustomError(
-    "Error, rackets not found",
+    "Error, endpoint not found",
     404,
-    "Error, rackets not found",
+    "Error, endpoint not found",
   );
 
   next(newCustomError);
