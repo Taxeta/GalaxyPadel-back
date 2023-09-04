@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for server/index.ts</title>
+    <title>Code coverage report for mocks/mocksRackets.ts</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../prettify.css" />
     <link rel="stylesheet" href="../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../index.html">All files</a> / <a href="index.html">server</a> index.ts</h1>
+        <h1><a href="../index.html">All files</a> / <a href="index.html">mocks</a> mocksRackets.ts</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/16</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -92,64 +92,76 @@
 <a name='L27'></a><a href='#L27'>27</a>
 <a name='L28'></a><a href='#L28'>28</a>
 <a name='L29'></a><a href='#L29'>29</a>
-<a name='L30'></a><a href='#L30'>30</a></td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<a name='L30'></a><a href='#L30'>30</a>
+<a name='L31'></a><a href='#L31'>31</a>
+<a name='L32'></a><a href='#L32'>32</a>
+<a name='L33'></a><a href='#L33'>33</a>
+<a name='L34'></a><a href='#L34'>34</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import "dotenv/config";</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import mongoose from "mongoose";
+import { type RacketStructure } from "../database/type";
 &nbsp;
-<span class="cstat-no" title="statement not covered" >import cors from "cors";</span>
-<span class="cstat-no" title="statement not covered" >import express from "express";</span>
-<span class="cstat-no" title="statement not covered" >import morgan from "morgan";</span>
-<span class="cstat-no" title="statement not covered" >import { endpointNotFound, generalError } from "../middlewares/error.js";</span>
-<span class="cstat-no" title="statement not covered" >import { pingController } from "./controllers/pingController/pingController.js";</span>
+const mockId = new mongoose.Types.ObjectId().toString();
 &nbsp;
-const corsOptions = <span class="cstat-no" title="statement not covered" >{</span>
-  origin: [process.env.ALLOW_ORIGIN_PROD!, process.env.ALLOW_ORIGIN_LOCAL!],
-};
-&nbsp;
-const app = <span class="cstat-no" title="statement not covered" >express();</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >app.disable("x-powered-by");</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >app.use(cors(corsOptions));</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >app.use(morgan("dev"));</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >app.use(express.json());</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >app.get("/", pingController);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >app.use(generalError);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >app.use(endpointNotFound);</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >export default app;</span>
+export const mockRackets: RacketStructure[] = [
+  {
+    _id: new mongoose.Types.ObjectId().toString(),
+    name: "Puma SolarATTACK Momo",
+    shape: "Round shape",
+    weight: 370,
+    material: "Soft EVA",
+    power: 8,
+    control: 10,
+    description:
+      "Its low balance also makes it very easy to use, and probably part of the reason Momo has been able to pull off so many amazing “tweeners”.",
+    image:
+      "https://global-uploads.webflow.com/63b3fa45463266b20f659562/649e6f862b0a67ce08e19fb2_64956aba227b3b839fb4ec8c_6470cbdbd3b6b46a21ebf792_Puma%252520Solar%252520Attack%252520Momo%252520Review.png",
+  },
+  {
+    _id: mockId,
+    name: "Adidas Metalbone 3.2",
+    shape: "Diamond shape",
+    weight: 355,
+    material: "Soft EVA",
+    power: 10,
+    control: 8,
+    description:
+      "Slightly softer core, slightly increasing sweet spot size and core reactivity. Intermediate-advanced level players looking for power and control.",
+    image:
+      "https://global-uploads.webflow.com/63b3fa45463266b20f659562/649e6f8305268fb9a97f602b_64217f65b74db7945744bd8f_641980999afb8b103ce7dc93_Metalbone%2525203.2%252520Review.png",
+  },
+];
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
