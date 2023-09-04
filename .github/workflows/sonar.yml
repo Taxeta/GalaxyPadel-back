@@ -18,7 +18,7 @@ jobs:
       - name: Coverage
         run: npm run test:coverage
         env:
-          MONGO_NAMEAPI_URL: ${{ secrets.MONGO_NAMEAPI_URL }} # Needed to get PR information, if any
+          MONGO_RACKETS_URL: ${{ secrets.MONGO_RACKETS_URL }} # Needed to get PR information, if any
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:

@@ -17,4 +17,4 @@ jobs:
       - name: 🧪 Testing
         run: npm test
         env:
-          MONGO_ROBOTS_URL: ${{ secrets.MONGO_NAMEAPI_URL }}
+          MONGO_RACKETS_URL: ${{ secrets.MONGO_RACKETS_URL }}
