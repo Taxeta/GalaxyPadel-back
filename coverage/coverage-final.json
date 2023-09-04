@@ -117,5 +117,39 @@
     },
     "f": { "0": 1, "1": 4 },
     "b": { "0": [4, 2], "1": [4, 2] }
+  },
+  "C:\\Users\\josem\\OneDrive\\Desktop\\bootcamp\\FINAL PROJECT\\Jose-Vera-Final-Project-back-202307-bcn\\src\\server\\controllers\\pingController\\pingController.ts": {
+    "path": "C:\\Users\\josem\\OneDrive\\Desktop\\bootcamp\\FINAL PROJECT\\Jose-Vera-Final-Project-back-202307-bcn\\src\\server\\controllers\\pingController\\pingController.ts",
+    "statementMap": {
+      "0": {
+        "start": { "line": 3, "column": 30 },
+        "end": { "line": 5, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 4, "column": 2 },
+        "end": { "line": 4, "column": 47 }
+      },
+      "2": {
+        "start": { "line": 3, "column": 13 },
+        "end": { "line": 3, "column": 30 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 3, "column": 30 },
+          "end": { "line": 3, "column": 31 }
+        },
+        "loc": {
+          "start": { "line": 3, "column": 63 },
+          "end": { "line": 5, "column": 1 }
+        }
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 1, "1": 2, "2": 1 },
+    "f": { "0": 2 },
+    "b": {}
   }
 }
