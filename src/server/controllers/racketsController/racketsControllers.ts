@@ -1,6 +1,6 @@
 import { type NextFunction, type Request, type Response } from "express";
-import Racket from "../../../database/models/Racket";
-import CustomError from "../../../CustomError/CustomError";
+import Racket from "../../../database/models/Racket.js";
+import CustomError from "../../../CustomError/CustomError.js";
 
 export const getRackets = async (
   _req: Request,
@@ -8,7 +8,7 @@ export const getRackets = async (
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const rackets = await Racket.find().exec();
+    const rackets = await Racket.find().limit(10).exec();
 
     res.status(200).json({ rackets });
   } catch (error: unknown) {

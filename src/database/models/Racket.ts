@@ -1,5 +1,6 @@
 import { Schema, model } from "mongoose";
-import { type RacketStructure } from "../type";
+import { type RacketStructure } from "../../server/type.js";
+import User from "./User.js";
 
 const racketSchema = new Schema<RacketStructure>({
   name: {
@@ -33,6 +34,15 @@ const racketSchema = new Schema<RacketStructure>({
   image: {
     type: String,
     require: true,
+  },
+  favorite: {
+    type: Boolean,
+    require: true,
+  },
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: User,
+    required: true,
   },
 });
 

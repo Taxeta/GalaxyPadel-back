@@ -1,8 +1,9 @@
 import { type Schema } from "mongoose";
 
 export interface UserStructure {
-  userId: Schema.Types.ObjectId;
-  userName: string;
+  _id: string;
+  name: string;
+  authId: string;
 }
 
 export interface RacketStructure {
@@ -15,4 +16,6 @@ export interface RacketStructure {
   control: number;
   description: string;
   image: string;
+  favorite: boolean;
+  user: Schema.Types.ObjectId;
 }

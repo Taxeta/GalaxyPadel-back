@@ -18,6 +18,7 @@ const next = jest.fn();
 describe("Given a getRackets controller", () => {
   describe("When it receives a response", () => {
     Racket.find = jest.fn().mockReturnValue({
+      limit: jest.fn().mockReturnThis(),
       exec: jest.fn().mockResolvedValue(mockRackets),
     });
 
