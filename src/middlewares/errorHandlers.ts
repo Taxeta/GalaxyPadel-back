@@ -7,8 +7,8 @@ export const generalErrorHandler = (
   res: Response,
   _next: NextFunction,
 ) => {
-  const errorMessage = error.message ?? "Fatal Error";
-  const errorStatusCode = error.statusCode ?? 500;
+  const errorMessage = error.message || "Internal server error";
+  const errorStatusCode = error.statusCode || 500;
 
   res.status(errorStatusCode).json({ error: errorMessage });
 };

@@ -1,0 +1,121 @@
+{
+  "C:\\Users\\josem\\OneDrive\\Desktop\\bootcamp\\FINAL PROJECT\\Jose-Vera-Final-Project-back-202307-bcn\\src\\middlewares\\CustomError.ts": {
+    "path": "C:\\Users\\josem\\OneDrive\\Desktop\\bootcamp\\FINAL PROJECT\\Jose-Vera-Final-Project-back-202307-bcn\\src\\middlewares\\CustomError.ts",
+    "statementMap": {
+      "0": {
+        "start": { "line": 7, "column": 4 },
+        "end": { "line": 7, "column": 19 }
+      },
+      "1": {
+        "start": { "line": 3, "column": 11 },
+        "end": { "line": 3, "column": 26 }
+      },
+      "2": {
+        "start": { "line": 4, "column": 11 },
+        "end": { "line": 4, "column": 29 }
+      },
+      "3": {
+        "start": { "line": 5, "column": 21 },
+        "end": { "line": 5, "column": 42 }
+      },
+      "4": {
+        "start": { "line": 11, "column": 0 },
+        "end": { "line": 11, "column": 27 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 2, "column": 2 },
+          "end": { "line": 2, "column": null }
+        },
+        "loc": {
+          "start": { "line": 5, "column": 42 },
+          "end": { "line": 8, "column": 3 }
+        }
+      }
+    },
+    "branchMap": {},
+    "s": { "0": 0, "1": 0, "2": 0, "3": 0, "4": 0 },
+    "f": { "0": 0 },
+    "b": {}
+  },
+  "C:\\Users\\josem\\OneDrive\\Desktop\\bootcamp\\FINAL PROJECT\\Jose-Vera-Final-Project-back-202307-bcn\\src\\middlewares\\errorHandlers.ts": {
+    "path": "C:\\Users\\josem\\OneDrive\\Desktop\\bootcamp\\FINAL PROJECT\\Jose-Vera-Final-Project-back-202307-bcn\\src\\middlewares\\errorHandlers.ts",
+    "statementMap": {
+      "0": {
+        "start": { "line": 4, "column": 35 },
+        "end": { "line": 14, "column": 1 }
+      },
+      "1": {
+        "start": { "line": 10, "column": 23 },
+        "end": { "line": 10, "column": 63 }
+      },
+      "2": {
+        "start": { "line": 11, "column": 26 },
+        "end": { "line": 11, "column": 49 }
+      },
+      "3": {
+        "start": { "line": 13, "column": 2 },
+        "end": { "line": 13, "column": 60 }
+      },
+      "4": {
+        "start": { "line": 4, "column": 13 },
+        "end": { "line": 4, "column": 35 }
+      }
+    },
+    "fnMap": {
+      "0": {
+        "name": "(anonymous_0)",
+        "decl": {
+          "start": { "line": 4, "column": 35 },
+          "end": { "line": 4, "column": null }
+        },
+        "loc": {
+          "start": { "line": 9, "column": 4 },
+          "end": { "line": 14, "column": 1 }
+        }
+      }
+    },
+    "branchMap": {
+      "0": {
+        "loc": {
+          "start": { "line": 10, "column": 23 },
+          "end": { "line": 10, "column": 63 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 10, "column": 23 },
+            "end": { "line": 10, "column": 36 }
+          },
+          {
+            "start": { "line": 10, "column": 40 },
+            "end": { "line": 10, "column": 63 }
+          }
+        ]
+      },
+      "1": {
+        "loc": {
+          "start": { "line": 11, "column": 26 },
+          "end": { "line": 11, "column": 49 }
+        },
+        "type": "binary-expr",
+        "locations": [
+          {
+            "start": { "line": 11, "column": 26 },
+            "end": { "line": 11, "column": 42 }
+          },
+          {
+            "start": { "line": 11, "column": 46 },
+            "end": { "line": 11, "column": 49 }
+          }
+        ]
+      }
+    },
+    "s": { "0": 1, "1": 2, "2": 2, "3": 2, "4": 1 },
+    "f": { "0": 2 },
+    "b": { "0": [2, 2], "1": [2, 2] }
+  }
+}
