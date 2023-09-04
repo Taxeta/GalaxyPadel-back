@@ -7,6 +7,8 @@ module.exports = {
     "!**/src/index.ts",
     "!**/src/**/connectToDatabase.ts",
     "!**/src/**/startServer.ts",
+    "!**/src/server/index.ts",
+    "!**/src/middlewares/CustomError.ts",
   ],
   testMatch: ["**/src/**/*.test.ts"],
   resolver: "jest-ts-webcompat-resolver",
