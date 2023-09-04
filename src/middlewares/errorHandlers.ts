@@ -7,9 +7,9 @@ export const endpointNotFound = (
   next: NextFunction,
 ) => {
   const newCustomError = new CustomError(
-    "Error, racket not found",
+    "Error, rackets not found",
     404,
-    "Error, racket not found",
+    "Error, rackets not found",
   );
 
   next(newCustomError);
