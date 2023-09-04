@@ -1,6 +1,6 @@
 import { type NextFunction, type Request, type Response } from "express";
-import type CustomError from "../CustomError.js";
-import { generalErrorHandler } from "../errorHandlers.js";
+import type CustomError from "../../CustomError/CustomError.js";
+import { generalError } from "../error.js";
 
 beforeEach(() => {
   jest.clearAllMocks();
@@ -19,7 +19,7 @@ describe("Given a generalErrorHandler middleware", () => {
     test("Then it should call a response with codeStatus 500", () => {
       const expectedStatusCode = 500;
 
-      generalErrorHandler(
+      generalError(
         receivedError as CustomError,
         req as Request,
         res as Response,
@@ -33,7 +33,7 @@ describe("Given a generalErrorHandler middleware", () => {
       const receivedError = new Error();
       const expectedErrorMessage = "Internal server error";
 
-      generalErrorHandler(
+      generalError(
         receivedError as CustomError,
         req as Request,
         res as Response,

@@ -3,10 +3,7 @@ import "dotenv/config";
 import cors from "cors";
 import express from "express";
 import morgan from "morgan";
-import {
-  endpointNotFound,
-  generalErrorHandler,
-} from "../middlewares/errorHandlers.js";
+import { endpointNotFound, generalError } from "../middlewares/error.js";
 import { pingController } from "./controllers/pingController/pingController.js";
 
 const corsOptions = {
@@ -25,7 +22,7 @@ app.use(express.json());
 
 app.get("/", pingController);
 
-app.use(generalErrorHandler);
+app.use(generalError);
 
 app.use(endpointNotFound);
 
