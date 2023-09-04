@@ -1,6 +1,6 @@
 import { type NextFunction, type Request, type Response } from "express";
-import type CustomError from "./CustomError";
-import { generalErrorHandler } from "./errorHandlers";
+import type CustomError from "../CustomError.js";
+import { generalErrorHandler } from "../errorHandlers.js";
 
 beforeEach(() => {
   jest.clearAllMocks();

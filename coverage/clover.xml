@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1693816357621" clover="3.2.0">
-  <project timestamp="1693816357621" name="All files">
-    <metrics statements="9" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="1" elements="15" coveredelements="9" complexity="0" loc="9" ncloc="9" packages="1" files="2" classes="2"/>
-    <file name="CustomError.ts" path="C:\Users\josem\OneDrive\Desktop\bootcamp\FINAL PROJECT\Jose-Vera-Final-Project-back-202307-bcn\src\middlewares\CustomError.ts">
-      <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <line num="3" count="0" type="stmt"/>
-      <line num="4" count="0" type="stmt"/>
-      <line num="5" count="0" type="stmt"/>
-      <line num="7" count="0" type="stmt"/>
-      <line num="11" count="0" type="stmt"/>
-    </file>
+<coverage generated="1693821680783" clover="3.2.0">
+  <project timestamp="1693821680783" name="All files">
+    <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2" elements="14" coveredelements="14" complexity="0" loc="8" ncloc="8" packages="1" files="1" classes="1"/>
     <file name="errorHandlers.ts" path="C:\Users\josem\OneDrive\Desktop\bootcamp\FINAL PROJECT\Jose-Vera-Final-Project-back-202307-bcn\src\middlewares\errorHandlers.ts">
-      <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="4" count="1" type="stmt"/>
-      <line num="10" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="11" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="13" count="2" type="stmt"/>
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <line num="2" count="2" type="stmt"/>
+      <line num="4" count="2" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+      <line num="15" count="1" type="stmt"/>
+      <line num="18" count="2" type="stmt"/>
+      <line num="24" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="27" count="4" type="stmt"/>
     </file>
   </project>
 </coverage>

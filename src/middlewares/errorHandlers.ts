@@ -1,5 +1,19 @@
 import { type NextFunction, type Request, type Response } from "express";
-import type CustomError from "./CustomError";
+import CustomError from "./CustomError.js";
+
+export const endpointNotFound = (
+  _req: Request,
+  _res: Response,
+  next: NextFunction,
+) => {
+  const newCustomError = new CustomError(
+    "Error, rackets not found",
+    404,
+    "Error, rackets not found",
+  );
+
+  next(newCustomError);
+};
 
 export const generalErrorHandler = (
   error: CustomError,
