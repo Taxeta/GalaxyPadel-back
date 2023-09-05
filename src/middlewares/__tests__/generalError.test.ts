@@ -6,8 +6,8 @@ beforeEach(() => {
   jest.clearAllMocks();
 });
 
-describe("Given a generalErrorHandler middleware", () => {
-  describe("When it receives a response and errorHandler can't handle this error", () => {
+describe("Given a generalError middleware", () => {
+  describe("When it receives a response and an errorHandler wich can't handle this error", () => {
     const res: Partial<Response> = {
       status: jest.fn().mockReturnThis(),
       json: jest.fn(),
