@@ -3,7 +3,7 @@ import CustomError from "../CustomError/CustomError.js";
 
 export const endpointNotFound = (
   _req: Request,
-  res: Response,
+  _res: Response,
   next: NextFunction,
 ) => {
   const newCustomError = new CustomError(
