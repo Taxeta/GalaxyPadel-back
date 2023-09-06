@@ -1,5 +1,5 @@
 import { type NextFunction, type Request, type Response } from "express";
-import CustomError from "../../CustomError/CustomError.js";
+import CustomError from "../../../CustomError/CustomError.js";
 import { endpointNotFound, generalError } from "../error.js";
 
 beforeEach(() => {
