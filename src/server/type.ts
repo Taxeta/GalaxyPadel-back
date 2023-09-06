@@ -1,4 +1,5 @@
 import { type Schema } from "mongoose";
+import { type Request } from "express";
 
 export interface UserStructure {
   _id: string;
@@ -18,4 +19,8 @@ export interface RacketStructure {
   image: string;
   favorite: boolean;
   user: Schema.Types.ObjectId;
+}
+
+export interface AuthRequest extends Request {
+  userId?: string;
 }
