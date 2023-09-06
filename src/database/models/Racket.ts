@@ -1,6 +1,5 @@
 import { Schema, model } from "mongoose";
 import { type RacketStructure } from "../../server/type.js";
-import User from "./User.js";
 
 const racketSchema = new Schema<RacketStructure>({
   name: {
@@ -41,7 +40,7 @@ const racketSchema = new Schema<RacketStructure>({
   },
   user: {
     type: Schema.Types.ObjectId,
-    ref: User,
+    ref: "User",
     required: true,
   },
 });
