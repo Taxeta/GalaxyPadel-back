@@ -1,5 +1,5 @@
 import { type NextFunction, type Response } from "express";
-import firebaseApp from "../../server/firebase";
+import firebaseApp from "../../server/firebase.js";
 import CustomError from "../../CustomError/CustomError.js";
 import admin from "firebase-admin";
 import User from "../../database/models/User.js";
