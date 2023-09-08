@@ -1,7 +1,6 @@
 import { Schema, model } from "mongoose";
-import { type RacketStructure } from "../../server/type.js";
 
-const racketSchema = new Schema<RacketStructure>({
+const racketSchema = new Schema({
   name: {
     type: String,
     require: true,

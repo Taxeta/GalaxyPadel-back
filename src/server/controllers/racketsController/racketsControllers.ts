@@ -9,7 +9,7 @@ export const getRackets = async (
   next: NextFunction,
 ) => {
   try {
-    const _id = req.userId;
+    const _id = req.authId;
 
     const rackets = await Racket.find<RacketStructure[]>({ user: _id })
       .limit(10)
@@ -18,9 +18,9 @@ export const getRackets = async (
     res.status(200).json({ rackets });
   } catch (error: unknown) {
     const customError = new CustomError(
-      "Can't retrieve rackets",
-      500,
       (error as Error).message,
+      404,
+      "Can't retrieve rackets",
     );
 
     next(customError);
