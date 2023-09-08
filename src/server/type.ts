@@ -1,10 +1,9 @@
-import { type Schema } from "mongoose";
 import { type Request } from "express";
 
 export interface UserStructure {
   _id: string;
   name: string;
-  authId: string;
+  uid: string;
 }
 
 export interface RacketStructure {
@@ -18,9 +17,9 @@ export interface RacketStructure {
   description: string;
   image: string;
   favorite: boolean;
-  user: Schema.Types.ObjectId;
+  user: string;
 }
 
 export interface AuthRequest extends Request {
-  userId?: string;
+  authId?: string;
 }

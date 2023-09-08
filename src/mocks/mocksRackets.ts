@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
 import { type RacketStructure } from "../server/type.js";
 
+export const idRacketMock = new mongoose.Types.ObjectId().toString();
+
 export const mockRackets: RacketStructure[] = [
   {
     _id: new mongoose.Types.ObjectId().toString(),
@@ -15,7 +17,7 @@ export const mockRackets: RacketStructure[] = [
     image:
       "https://global-uploads.webflow.com/63b3fa45463266b20f659562/649e6f862b0a67ce08e19fb2_64956aba227b3b839fb4ec8c_6470cbdbd3b6b46a21ebf792_Puma%252520Solar%252520Attack%252520Momo%252520Review.png",
     favorite: false,
-    user: new mongoose.Schema.Types.ObjectId("User"),
+    user: idRacketMock,
   },
   {
     _id: new mongoose.Types.ObjectId().toString(),
@@ -30,6 +32,6 @@ export const mockRackets: RacketStructure[] = [
     image:
       "https://global-uploads.webflow.com/63b3fa45463266b20f659562/649e6f8305268fb9a97f602b_64217f65b74db7945744bd8f_641980999afb8b103ce7dc93_Metalbone%2525203.2%252520Review.png",
     favorite: false,
-    user: new mongoose.Schema.Types.ObjectId("User"),
+    user: idRacketMock,
   },
 ];

@@ -1,5 +1,7 @@
 import request from "supertest";
-import app from "../..";
+import app from "../../index.js";
+
+jest.mock("firebase-admin");
 
 describe("Given a GET endpoint '/'", () => {
   describe("When it receives a request", () => {

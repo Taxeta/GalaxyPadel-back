@@ -34,7 +34,7 @@ describe("Given an auth middleware", () => {
 
       const user: UserStructure = {
         _id: id,
-        authId: token.uid,
+        uid: token.uid,
         name: "Arturo",
       };
 
@@ -76,9 +76,9 @@ describe("Given an auth middleware", () => {
     };
     test("Then it should call the function next with error 'Unauthorized'", async () => {
       const customError = new CustomError(
-        "Unauthorized",
-        401,
         "Not token provider",
+        401,
+        "Unauthorized",
       );
 
       admin.auth = jest.fn().mockReturnValue({
@@ -94,22 +94,18 @@ describe("Given an auth middleware", () => {
   describe("When it receives a request with invalid token, response and next function", () => {
     test("Then it should call an error with 'Invalid token' message", async () => {
       const req: Partial<Request> = {
-        header: jest.fn().mockReturnValue(token),
+        header: jest.fn().mockReturnValue("token"),
       };
+
+      const error = new Error();
 
       admin.auth = jest.fn().mockReturnValue({
         verifyIdToken: jest.fn().mockRejectedValue(token),
       });
 
-      const customError = new CustomError(
-        "Invalid token",
-        401,
-        "Invalid token",
-      );
-
       await authMiddleware(req as Request, res as Response, next);
 
-      expect(next).toHaveBeenCalledWith(customError);
+      expect(next).toHaveBeenCalledWith(error as CustomError);
     });
   });
 });

@@ -6,7 +6,7 @@ const userSchema = new Schema<UserStructure>({
     type: String,
     required: true,
   },
-  authId: {
+  uid: {
     type: String,
     required: true,
   },
