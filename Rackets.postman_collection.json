@@ -1,0 +1,118 @@
+{
+  "info": {
+    "_postman_id": "b9908abe-5c0a-4cea-b417-97c9d015279a",
+    "name": "Rackets",
+    "description": "Rackets collection with GET, PUT, DELETE, PATCH methods",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28793548"
+  },
+  "item": [
+    {
+      "name": "ping",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": [""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "render ping",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jose-vera-final-project-202307-bcn.onrender.com/",
+          "protocol": "https",
+          "host": ["jose-vera-final-project-202307-bcn", "onrender", "com"],
+          "path": [""]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getRackets",
+      "protocolProfileBehavior": {
+        "followAuthorizationHeader": false
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MGFkMTE4YTk0MGFkYzlmMmY1Mzc2YjM1MjkyZmVkZThjMmQwZWUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDM0OTQ5NiwidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0MzQ5NDk2LCJleHAiOjE2OTQzNTMwOTYsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.RMU-x3UyIgkQrqHlwjUJUu-Fveo0xLPQPYykx2AGcu4wkfKpoNIf2QrVF7LxnXYspI4pnd-eSEe8_uhwaC2X3FU3Mf0rOwsms3HmO65JgnKZVuHv13IhqLv30qIejAL9nwnFwSWYaNLdcl6SSyZUgw0Chy4itAHnDeDjDiJI1QQuw1L0t092-D1Jrz1f6KZCykiqIVzSOSVsRxcrlSiOuqKO4ReuevQcHuSS2Gv1yo_sYPUV6qKrUYkurfnVT1MoW1vax3UgAOMCJpp_ueHuOZt6zxCpIi88Zztl04lTrsrCrWkJ_JvwExuqqSPwr_wvz9knHZtMtdHBZUH8H2frHA",
+            "type": "text"
+          },
+          {
+            "key": "",
+            "value": "",
+            "type": "text",
+            "disabled": true
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:4000/rackets",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["rackets"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "render getRackets",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MGFkMTE4YTk0MGFkYzlmMmY1Mzc2YjM1MjkyZmVkZThjMmQwZWUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDM0OTQ5NiwidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0MzQ5NDk2LCJleHAiOjE2OTQzNTMwOTYsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.RMU-x3UyIgkQrqHlwjUJUu-Fveo0xLPQPYykx2AGcu4wkfKpoNIf2QrVF7LxnXYspI4pnd-eSEe8_uhwaC2X3FU3Mf0rOwsms3HmO65JgnKZVuHv13IhqLv30qIejAL9nwnFwSWYaNLdcl6SSyZUgw0Chy4itAHnDeDjDiJI1QQuw1L0t092-D1Jrz1f6KZCykiqIVzSOSVsRxcrlSiOuqKO4ReuevQcHuSS2Gv1yo_sYPUV6qKrUYkurfnVT1MoW1vax3UgAOMCJpp_ueHuOZt6zxCpIi88Zztl04lTrsrCrWkJ_JvwExuqqSPwr_wvz9knHZtMtdHBZUH8H2frHA",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://jose-vera-final-project-202307-bcn.onrender.com/rackets",
+          "protocol": "https",
+          "host": ["jose-vera-final-project-202307-bcn", "onrender", "com"],
+          "path": ["rackets"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ]
+}

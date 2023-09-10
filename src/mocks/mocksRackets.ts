@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { type RacketStructure } from "../server/type.js";
+import { type RacketStructure } from "../server/types.js";
 
 export const idRacketMock = new mongoose.Types.ObjectId().toString();
 

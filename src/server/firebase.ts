@@ -1,4 +1,3 @@
-import "dotenv/config";
 import admin from "firebase-admin";
 
 const firebaseApp = admin.initializeApp({

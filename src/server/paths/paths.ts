@@ -1,4 +1,4 @@
-import { type Paths } from "./types";
+import { type Paths } from "./types.js";
 
 const paths: Paths = {
   rootPath: "/",

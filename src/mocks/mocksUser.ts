@@ -1,10 +1,12 @@
-import { type UserStructure } from "../server/type.js";
+import { type UserStructure } from "../server/types.js";
 import { idRacketMock } from "./mocksRackets.js";
 
-export const mockAuthId = "uid";
+export const mockAuthId = "authId";
 
-export const userMock: UserStructure = {
-  _id: idRacketMock,
-  name: "Arturo",
-  uid: mockAuthId,
-};
+export const userMock: UserStructure[] = [
+  {
+    _id: idRacketMock,
+    name: "Arturo",
+    authId: mockAuthId,
+  },
+];

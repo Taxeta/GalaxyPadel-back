@@ -3,7 +3,7 @@ import { getRackets } from "../racketsControllers.js";
 import Racket from "../../../../database/models/Racket.js";
 import { mockRackets } from "../../../../mocks/mocksRackets.js";
 import CustomError from "../../../../CustomError/CustomError.js";
-import { type AuthRequest } from "../../../type.js";
+import { type AuthRequest } from "../../../types.js";
 
 beforeEach(() => {
   jest.clearAllMocks();

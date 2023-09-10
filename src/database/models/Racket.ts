@@ -35,12 +35,12 @@ const racketSchema = new Schema({
   },
   favorite: {
     type: Boolean,
-    require: true,
+    require: false,
   },
   user: {
     type: Schema.Types.ObjectId,
     ref: "User",
-    required: true,
+    required: false,
   },
 });
 
