@@ -1,11 +1,13 @@
+import mongoose from "mongoose";
 import { type UserStructure } from "../server/types.js";
-import { idRacketMock } from "./mocksRackets.js";
 
-export const mockAuthId = "authId";
+export const userId = new mongoose.Types.ObjectId().toString();
+
+export const mockAuthId = "asdsad5sad7";
 
 export const userMock: UserStructure[] = [
   {
-    _id: idRacketMock,
+    _id: userId,
     name: "Arturo",
     authId: mockAuthId,
   },
