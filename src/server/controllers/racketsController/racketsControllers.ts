@@ -1,15 +1,15 @@
 import { type NextFunction, type Response } from "express";
 import Racket from "../../../database/models/Racket.js";
 import CustomError from "../../../CustomError/CustomError.js";
-import { type RacketStructure, type AuthRequest } from "../../type.js";
+import { type RacketStructure, type AuthRequest } from "../../types.js";
 
 export const getRackets = async (
   req: AuthRequest,
   res: Response,
   next: NextFunction,
-) => {
+): Promise<void> => {
   try {
-    const _id = req.authId;
+    const _id = req.userId;
 
     const rackets = await Racket.find<RacketStructure[]>({ user: _id })
       .limit(10)

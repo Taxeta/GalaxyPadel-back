@@ -3,7 +3,7 @@ import admin from "firebase-admin";
 import authMiddleware from "./auth";
 import CustomError from "../../CustomError/CustomError.js";
 import mongoose from "mongoose";
-import { type UserStructure } from "../../server/type.js";
+import { type UserStructure } from "../../server/types.js";
 import User from "../../database/models/User.js";
 
 jest.mock("firebase-admin");
@@ -34,7 +34,7 @@ describe("Given an auth middleware", () => {
 
       const user: UserStructure = {
         _id: id,
-        uid: token.uid,
+        authId: token.uid,
         name: "Arturo",
       };
 

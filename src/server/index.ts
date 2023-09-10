@@ -13,6 +13,7 @@ const corsOptions = {
 };
 
 const app = express();
+
 app.disable("x-powered-by");
 
 app.use(cors(corsOptions));
@@ -23,9 +24,7 @@ app.use(express.json());
 
 app.get(paths.rootPath, pingController);
 
-app.use(auth);
-
-app.use(paths.racketsPath, racketsRouter);
+app.use(paths.racketsPath, auth, racketsRouter);
 
 app.use(generalError);
 

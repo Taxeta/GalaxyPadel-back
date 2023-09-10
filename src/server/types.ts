@@ -3,7 +3,7 @@ import { type Request } from "express";
 export interface UserStructure {
   _id: string;
   name: string;
-  uid: string;
+  authId: string;
 }
 
 export interface RacketStructure {
@@ -21,5 +21,5 @@ export interface RacketStructure {
 }
 
 export interface AuthRequest extends Request {
-  authId?: string;
+  userId?: string;
 }
