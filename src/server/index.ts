@@ -9,11 +9,10 @@ import auth from "../middlewares/auth/auth.js";
 import paths from "./paths/paths.js";
 
 const corsOptions: CorsOptions = {
-  origin: [
-    process.env.ALLOW_ORIGIN_PROD!,
-    process.env.ALLOW_ORIGIN_LOCAL!,
-    process.env.ALLOW_ORIGIN_GET!,
-  ],
+  origin: [process.env.ALLOW_ORIGIN_PROD!, process.env.ALLOW_ORIGIN_LOCAL!],
+  methods: "GET",
+  preflightContinue: false,
+  optionsSuccessStatus: 204,
 };
 
 const app = express();
