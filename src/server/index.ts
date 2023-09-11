@@ -9,9 +9,13 @@ import auth from "../middlewares/auth/auth.js";
 import paths from "./paths/paths.js";
 
 const corsOptions: CorsOptions = {
-  origin: [process.env.ALLOW_ORIGIN_PROD!, process.env.ALLOW_ORIGIN_LOCAL!],
-  methods: "GET",
-  preflightContinue: false,
+  origin: [
+    process.env.ALLOW_ORIGIN_PROD!,
+    process.env.ALLOW_ORIGIN_LOCAL!,
+    "https://jose-vera-final-project-202307-bcn.netlify.app",
+  ],
+  methods: ["GET"],
+  preflightContinue: true,
   optionsSuccessStatus: 204,
 };
 
