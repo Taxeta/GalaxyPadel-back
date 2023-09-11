@@ -1,5 +1,5 @@
 import "dotenv/config";
-import cors from "cors";
+import cors, { type CorsOptions } from "cors";
 import express from "express";
 import morgan from "morgan";
 import { endpointNotFound, generalError } from "../middlewares/error/error.js";
@@ -8,8 +8,19 @@ import racketsRouter from "./router/racketsRouter.js";
 import auth from "../middlewares/auth/auth.js";
 import paths from "./paths/paths.js";
 
-const corsOptions = {
+const corsOptions: CorsOptions = {
   origin: [process.env.ALLOW_ORIGIN_PROD!, process.env.ALLOW_ORIGIN_LOCAL!],
+  allowedHeaders: [
+    "Content-Type",
+    "Origin",
+    "X-Requested-With",
+    "Accept",
+    "x-client-key",
+    "x-client-token",
+    "x-client-secret",
+    "Authorization",
+  ],
+  credentials: true,
 };
 
 const app = express();
