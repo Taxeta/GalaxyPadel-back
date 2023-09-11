@@ -9,25 +9,18 @@ import auth from "../middlewares/auth/auth.js";
 import paths from "./paths/paths.js";
 
 const corsOptions: CorsOptions = {
-  origin: [process.env.ALLOW_ORIGIN_PROD!, process.env.ALLOW_ORIGIN_LOCAL!],
-  allowedHeaders: [
-    "Content-Type",
-    "Origin",
-    "X-Requested-With",
-    "Accept",
-    "x-client-key",
-    "x-client-token",
-    "x-client-secret",
-    "Authorization",
+  origin: [
+    process.env.ALLOW_ORIGIN_PROD!,
+    process.env.ALLOW_ORIGIN_LOCAL!,
+    process.env.ALLOW_ORIGIN_GET!,
   ],
-  credentials: true,
 };
 
 const app = express();
 
-app.disable("x-powered-by");
-
 app.use(cors(corsOptions));
+
+app.disable("x-powered-by");
 
 app.use(morgan("dev"));
 
