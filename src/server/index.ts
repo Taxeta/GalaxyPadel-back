@@ -9,11 +9,7 @@ import auth from "../middlewares/auth/auth.js";
 import paths from "./paths/paths.js";
 
 const corsOptions: CorsOptions = {
-  origin: [
-    process.env.ALLOW_ORIGIN_PROD!,
-    process.env.ALLOW_ORIGIN_LOCAL!,
-    "https://jose-vera-final-project-202307-bcn.netlify.app",
-  ],
+  origin: [process.env.ALLOW_ORIGIN_PROD!, process.env.ALLOW_ORIGIN_LOCAL!],
   methods: ["GET"],
   preflightContinue: true,
   optionsSuccessStatus: 204,
@@ -22,6 +18,13 @@ const corsOptions: CorsOptions = {
 const app = express();
 
 app.use(cors(corsOptions));
+app.options("/rackets", (_req, res) => {
+  res.setHeader(
+    "Access-Control-Allow-Origin",
+    "https://jose-vera-final-project-202307-bcn.netlify.app",
+  );
+  res.setHeader("Access-Control-Allow-Origin", "GET");
+});
 
 app.disable("x-powered-by");
 
