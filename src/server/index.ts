@@ -10,9 +10,6 @@ import paths from "./paths/paths.js";
 
 const corsOptions: CorsOptions = {
   origin: [process.env.ALLOW_ORIGIN_PROD!, process.env.ALLOW_ORIGIN_LOCAL!],
-  methods: ["GET"],
-  preflightContinue: true,
-  optionsSuccessStatus: 204,
 };
 
 const app = express();
