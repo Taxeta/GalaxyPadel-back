@@ -18,13 +18,6 @@ const corsOptions: CorsOptions = {
 const app = express();
 
 app.use(cors(corsOptions));
-app.options("/rackets", (_req, res) => {
-  res.setHeader(
-    "Access-Control-Allow-Origin",
-    "https://jose-vera-final-project-202307-bcn.netlify.app",
-  );
-  res.setHeader("Access-Control-Allow-Origin", "GET");
-});
 
 app.disable("x-powered-by");
 
