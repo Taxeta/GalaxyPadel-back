@@ -26,3 +26,22 @@ export const getRackets = async (
     next(customError);
   }
 };
+
+export const deleteRacket = async (
+  req: AuthRequest,
+  _res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const { racketId } = req.params;
+    await Racket.findByIdAndDelete(racketId).exec();
+  } catch (error: unknown) {
+    const customError = new CustomError(
+      (error as Error).message,
+      500,
+      "Could not delete racket",
+    );
+
+    next(customError);
+  }
+};

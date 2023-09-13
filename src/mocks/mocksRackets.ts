@@ -16,7 +16,7 @@ export const mockRackets: RacketStructure[] = [
     description:
       "Its low balance also makes it very easy to use, and probably part of the reason Momo has been able to pull off so many amazing “tweeners”.",
     image:
-      "https://global-uploads.webflow.com/63b3fa45463266b20f659562/649e6f862b0a67ce08e19fb2_64956aba227b3b839fb4ec8c_6470cbdbd3b6b46a21ebf792_Puma%252520Solar%252520Attack%252520Momo%252520Review.png",
+      "https://cdn.discordapp.com/attachments/1150483066259775582/1151422447099330560/MomoPuma.webp",
     favorite: false,
     user: idRacketMock,
   },
@@ -31,7 +31,7 @@ export const mockRackets: RacketStructure[] = [
     description:
       "Slightly softer core, slightly increasing sweet spot size and core reactivity. Intermediate-advanced level players looking for power and control.",
     image:
-      "https://global-uploads.webflow.com/63b3fa45463266b20f659562/649e6f8305268fb9a97f602b_64217f65b74db7945744bd8f_641980999afb8b103ce7dc93_Metalbone%2525203.2%252520Review.png",
+      "https://cdn.discordapp.com/attachments/1150483066259775582/1151422444540809246/AdidasMetalbone.webp",
     favorite: false,
     user: idRacketMock,
   },
@@ -49,7 +49,7 @@ export const mockRackets1: RacketStructure[] = [
     description:
       "Its low balance also makes it very easy to use, and probably part of the reason Momo has been able to pull off so many amazing “tweeners”.",
     image:
-      "https://global-uploads.webflow.com/63b3fa45463266b20f659562/649e6f862b0a67ce08e19fb2_64956aba227b3b839fb4ec8c_6470cbdbd3b6b46a21ebf792_Puma%252520Solar%252520Attack%252520Momo%252520Review.png",
+      "https://cdn.discordapp.com/attachments/1150483066259775582/1151422447099330560/MomoPuma.webp",
     favorite: false,
     user: userId,
   },
