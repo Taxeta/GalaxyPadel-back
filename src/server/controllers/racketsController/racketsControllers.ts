@@ -29,12 +29,15 @@ export const getRackets = async (
 
 export const deleteRacket = async (
   req: AuthRequest,
-  _res: Response,
+  res: Response,
   next: NextFunction,
 ) => {
   try {
     const { racketId } = req.params;
+
     await Racket.findByIdAndDelete(racketId).exec();
+
+    res.status(200).json({ message: "Success, racket deleted!" });
   } catch (error: unknown) {
     const customError = new CustomError(
       (error as Error).message,
