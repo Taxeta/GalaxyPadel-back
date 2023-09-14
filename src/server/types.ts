@@ -18,6 +18,7 @@ export interface RacketStructure {
   image: string;
   favorite: boolean;
   user: string;
+  __v?: number;
 }
 
 export interface ReceivedRacket {
