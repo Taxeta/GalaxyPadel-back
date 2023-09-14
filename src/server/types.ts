@@ -20,6 +20,27 @@ export interface RacketStructure {
   user: string;
 }
 
+export interface ReceivedRacket {
+  name: string;
+  shape: string;
+  weight: number;
+  material: string;
+  power: number;
+  control: number;
+  description: string;
+  image: string;
+  favorite: boolean;
+}
+
 export interface AuthRequest extends Request {
+  userId?: string;
+}
+
+export interface AuthRequestWithBody
+  extends Request<
+    Record<string, unknown>,
+    Record<string, unknown>,
+    ReceivedRacket
+  > {
   userId?: string;
 }
