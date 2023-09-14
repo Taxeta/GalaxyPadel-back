@@ -28,6 +28,7 @@ describe("Given a deleteRackets controller", () => {
 
       expect(res.status).toHaveBeenCalledWith(statusCode);
     });
+
     test("Then it should call a message like 'Success, racket deleted!'", async () => {
       await deleteRacket(req as Request, res as Response, next);
 
@@ -35,19 +36,19 @@ describe("Given a deleteRackets controller", () => {
         message: "Success, racket deleted!",
       });
     });
+  });
 
-    describe("When it receives a request with a racketId like a idRacketMock, response and a next function", () => {
-      test("Then it should call the received next function with 500 status code and ''", async () => {
-        const error = new Error();
+  describe("When it receives a request with a racketId like a idRacketMock, response and a next function", () => {
+    test("Then it should call the received next function with 500 status code and 'error'", async () => {
+      const error = new Error();
 
-        Racket.findByIdAndDelete = jest
-          .fn()
-          .mockReturnValue({ exec: jest.fn().mockRejectedValue({}) });
+      Racket.findByIdAndDelete = jest
+        .fn()
+        .mockReturnValue({ exec: jest.fn().mockRejectedValue({}) });
 
-        await deleteRacket(req as Request, res as Response, next);
+      await deleteRacket(req as Request, res as Response, next);
 
-        expect(next).toHaveBeenCalledWith(error);
-      });
+      expect(next).toHaveBeenCalledWith(error);
     });
   });
 });
