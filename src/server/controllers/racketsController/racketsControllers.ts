@@ -1,7 +1,11 @@
 import { type NextFunction, type Response } from "express";
 import Racket from "../../../database/models/Racket.js";
 import CustomError from "../../../CustomError/CustomError.js";
-import { type RacketStructure, type AuthRequest } from "../../types.js";
+import {
+  type RacketStructure,
+  type AuthRequest,
+  type AuthRequestWithBody,
+} from "../../types.js";
 
 export const getRackets = async (
   req: AuthRequest,
@@ -43,6 +47,32 @@ export const deleteRacket = async (
       (error as Error).message,
       500,
       "Could not delete racket",
+    );
+
+    next(customError);
+  }
+};
+
+export const addRacket = async (
+  req: AuthRequestWithBody,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const racket = req.body;
+    const _id = req.userId;
+
+    const newRacket = await Racket.create({
+      ...racket,
+      user: _id,
+    });
+
+    res.status(201).json({ racket: newRacket });
+  } catch (error: unknown) {
+    const customError = new CustomError(
+      (error as Error).message,
+      500,
+      "Could not create the racket",
     );
 
     next(customError);
