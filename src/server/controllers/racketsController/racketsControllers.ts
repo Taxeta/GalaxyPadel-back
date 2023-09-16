@@ -79,7 +79,7 @@ export const addRacket = async (
   }
 };
 
-export const getRacketsById = async (
+export const getRacketById = async (
   req: AuthRequest,
   res: Response,
   next: NextFunction,
