@@ -3,7 +3,7 @@ import { type Paths } from "./types.js";
 const paths: Paths = {
   rootPath: "/",
   racketsPath: "/rackets",
-  deleteIdPath: "/:racketid",
+  deleteIdPath: "/:racketId",
 };
 
 export default paths;
