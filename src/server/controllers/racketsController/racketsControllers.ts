@@ -78,3 +78,25 @@ export const addRacket = async (
     next(customError);
   }
 };
+
+export const getRacketById = async (
+  req: AuthRequest,
+  res: Response,
+  next: NextFunction,
+) => {
+  const { racketId } = req.params;
+
+  try {
+    const racket = await Racket.findById(racketId).exec();
+
+    res.status(200).json({ racket });
+  } catch (error: unknown) {
+    const customError = new CustomError(
+      (error as Error).message,
+      404,
+      "Can't retrieve the racket",
+    );
+
+    next(customError);
+  }
+};
