@@ -45,3 +45,12 @@ export interface AuthRequestWithBody
   > {
   userId?: string;
 }
+
+export interface AuthRequestWithBooleanBody
+  extends Request<
+    Record<string, unknown>,
+    Record<string, unknown>,
+    { favorite: boolean }
+  > {
+  userId?: string;
+}
