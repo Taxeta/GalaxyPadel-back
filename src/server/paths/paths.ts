@@ -5,6 +5,7 @@ const paths: Paths = {
   racketsPath: "/rackets",
   deleteIdPath: "/:racketId",
   racketByIdPath: "/:racketId",
+  modifyByIdPath: "/:racketId",
 };
 
 export default paths;

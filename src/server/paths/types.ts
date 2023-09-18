@@ -3,4 +3,5 @@ export interface Paths {
   racketsPath: string;
   deleteIdPath: string;
   racketByIdPath: string;
+  modifyByIdPath: string;
 }

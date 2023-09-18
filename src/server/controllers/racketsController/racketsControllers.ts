@@ -5,6 +5,7 @@ import {
   type RacketStructure,
   type AuthRequest,
   type AuthRequestWithBody,
+  type AuthRequestWithBooleanBody,
 } from "../../types.js";
 
 export const getRackets = async (
@@ -93,10 +94,40 @@ export const getRacketById = async (
   } catch (error: unknown) {
     const customError = new CustomError(
       (error as Error).message,
-      404,
+      500,
       "Can't retrieve the racket",
     );
 
+    next(customError);
+  }
+};
+
+export const modifyRacketById = async (
+  req: AuthRequestWithBooleanBody,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const { favorite } = req.body;
+    const { racketId } = req.params;
+
+    const modifiedRacket = await Racket.findByIdAndUpdate(
+      racketId,
+      {
+        favorite: !favorite,
+      },
+      {
+        returnDocument: "after",
+      },
+    ).exec();
+
+    res.status(200).json({ racket: modifiedRacket });
+  } catch (error: unknown) {
+    const customError = new CustomError(
+      (error as Error).message,
+      500,
+      "Can't modify the racket",
+    );
     next(customError);
   }
 };
