@@ -55,7 +55,7 @@
         "header": [
           {
             "key": "Authorization",
-            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MGFkMTE4YTk0MGFkYzlmMmY1Mzc2YjM1MjkyZmVkZThjMmQwZWUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDM0OTQ5NiwidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0MzQ5NDk2LCJleHAiOjE2OTQzNTMwOTYsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.RMU-x3UyIgkQrqHlwjUJUu-Fveo0xLPQPYykx2AGcu4wkfKpoNIf2QrVF7LxnXYspI4pnd-eSEe8_uhwaC2X3FU3Mf0rOwsms3HmO65JgnKZVuHv13IhqLv30qIejAL9nwnFwSWYaNLdcl6SSyZUgw0Chy4itAHnDeDjDiJI1QQuw1L0t092-D1Jrz1f6KZCykiqIVzSOSVsRxcrlSiOuqKO4ReuevQcHuSS2Gv1yo_sYPUV6qKrUYkurfnVT1MoW1vax3UgAOMCJpp_ueHuOZt6zxCpIi88Zztl04lTrsrCrWkJ_JvwExuqqSPwr_wvz9knHZtMtdHBZUH8H2frHA",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImFhMDhlN2M3ODNkYjhjOGFjNGNhNzJhZjdmOWRkN2JiMzk4ZjE2ZGMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDc5NzU2NywidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0Nzk3NTY3LCJleHAiOjE2OTQ4MDExNjcsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.HO1cdBCb5_OSYZZ8W-GIxM_AkQeEmlFPHQMYPU0_zobOi2hEPkHMZtsyFJiSbkdSbj0d4H38sEf1KAaUN457uJpFThSYzxFKpmmjY17ZCYXvKN3H-PLhRbayIyJw8NBFQOYSHHiFe7eZUa8cjzFYjauyZL_dJa1HCE5NfHZcGDjwiXmjd2PBK2sNdEiKfxGeTXYjIiJ0_lSqwmk_-cRTNfnb519M964Vz5wvtMBmVX-j-njzKvKKSL3okFm0ZsqQZiyRUTyGyPxWt_KtBsUFmo6Yw-qaB_9taCZi5iL-KkhCWjBSqJawrZ6dRkqFoBYU5de5sA1iCAM-SyS0Zmje0A",
             "type": "text"
           },
           {
@@ -85,7 +85,7 @@
         "header": [
           {
             "key": "Authorization",
-            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MGFkMTE4YTk0MGFkYzlmMmY1Mzc2YjM1MjkyZmVkZThjMmQwZWUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDM0OTQ5NiwidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0MzQ5NDk2LCJleHAiOjE2OTQzNTMwOTYsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.RMU-x3UyIgkQrqHlwjUJUu-Fveo0xLPQPYykx2AGcu4wkfKpoNIf2QrVF7LxnXYspI4pnd-eSEe8_uhwaC2X3FU3Mf0rOwsms3HmO65JgnKZVuHv13IhqLv30qIejAL9nwnFwSWYaNLdcl6SSyZUgw0Chy4itAHnDeDjDiJI1QQuw1L0t092-D1Jrz1f6KZCykiqIVzSOSVsRxcrlSiOuqKO4ReuevQcHuSS2Gv1yo_sYPUV6qKrUYkurfnVT1MoW1vax3UgAOMCJpp_ueHuOZt6zxCpIi88Zztl04lTrsrCrWkJ_JvwExuqqSPwr_wvz9knHZtMtdHBZUH8H2frHA",
+            "value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IjE5MGFkMTE4YTk0MGFkYzlmMmY1Mzc2YjM1MjkyZmVkZThjMmQwZWUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDUxMzIxMCwidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0NTEzMjEwLCJleHAiOjE2OTQ1MTY4MTAsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.KcFLxDSPsSLzrHgRq7g7hzLAeb4JCyuCYPsfiajEVo6jtzHXgvrZFA38w3nd8c4-64FY_MFqtJ56sDeH0jnyGlInqrBMafdN6vEIll8NIR49NMhAlKioKiteeKnkGBU5BKgp31KLnhYvSlXkhctAGRImfcEh9QijfP61eMqhzUjfSn03URo-P-rQ11a9dcJq2nwPgD3M8YZc2FK5poQSDgpM2Lp8AWNCzQfnLAY9WPKYHCp54g5-vEivFebMBcdbGOo-sYQDmVfrzmVrijKobJuIA3bO4hgpjhMpfAs8Yk1d0dJl5S-zfU7UDRvHE516HrEpUX33PSAy2uWFRYah4w",
             "type": "text"
           }
         ],
@@ -94,6 +94,207 @@
           "protocol": "https",
           "host": ["jose-vera-final-project-202307-bcn", "onrender", "com"],
           "path": ["rackets"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "deleteRacket",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFhMDhlN2M3ODNkYjhjOGFjNGNhNzJhZjdmOWRkN2JiMzk4ZjE2ZGMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDg1OTQzNywidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0ODU5NDM3LCJleHAiOjE2OTQ4NjMwMzcsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.cMp1VO0a_4b_u8iVloALGrNwxWx-kBQRaFjdZiXgK87YrgHpqwGSBNi80o_dTE5dtTqQkcJH2-1NeymOUrTqVDsxTii-0dQS0MA4svOai6l4EWv9wcdFLFq6kiaIx9RoKmqWeeDz_FpZz38R-ssp5zKk4H0evuTzRYGZcO6Eb9Ie7htkB3n6-ykJw9oRwFk0S3AKu5F6Zq6oYdCfjuo2wL7WA-NiZYxUNUQVo_LW8KHz1mT2Kzsj9fLpe23aOxsUldCnzJ5aaFPQ4RQeosi8nXGiOxsDupxe2v_rqQz1iuck-QsMgousDjCcyohjBcSAhI0h2tuM76MwwxG3tsAvmA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/rackets/:6505764f02925328b4cbc1d9",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["rackets", ":6505764f02925328b4cbc1d9"],
+          "variable": [
+            {
+              "key": "6505764f02925328b4cbc1d9",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "render deleteRacket",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFhMDhlN2M3ODNkYjhjOGFjNGNhNzJhZjdmOWRkN2JiMzk4ZjE2ZGMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDg1OTQzNywidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0ODU5NDM3LCJleHAiOjE2OTQ4NjMwMzcsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.cMp1VO0a_4b_u8iVloALGrNwxWx-kBQRaFjdZiXgK87YrgHpqwGSBNi80o_dTE5dtTqQkcJH2-1NeymOUrTqVDsxTii-0dQS0MA4svOai6l4EWv9wcdFLFq6kiaIx9RoKmqWeeDz_FpZz38R-ssp5zKk4H0evuTzRYGZcO6Eb9Ie7htkB3n6-ykJw9oRwFk0S3AKu5F6Zq6oYdCfjuo2wL7WA-NiZYxUNUQVo_LW8KHz1mT2Kzsj9fLpe23aOxsUldCnzJ5aaFPQ4RQeosi8nXGiOxsDupxe2v_rqQz1iuck-QsMgousDjCcyohjBcSAhI0h2tuM76MwwxG3tsAvmA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://jose-vera-final-project-202307-bcn.onrender.com/rackets/:6505764f02925328b4cbc1d9",
+          "protocol": "https",
+          "host": ["jose-vera-final-project-202307-bcn", "onrender", "com"],
+          "path": ["rackets", ":6505764f02925328b4cbc1d9"],
+          "variable": [
+            {
+              "key": "6505764f02925328b4cbc1d9",
+              "value": ""
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "postRacket",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/rackets",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["rackets"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "render postRacket",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "https://jose-vera-final-project-202307-bcn.onrender.com/rackets",
+          "protocol": "https",
+          "host": ["jose-vera-final-project-202307-bcn", "onrender", "com"],
+          "path": ["rackets"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getRacket",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFhMDhlN2M3ODNkYjhjOGFjNGNhNzJhZjdmOWRkN2JiMzk4ZjE2ZGMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDk1MzkzMCwidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0OTUzOTMwLCJleHAiOjE2OTQ5NTc1MzAsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.GKZ08lZIklCbOyTSeNLYGHsVOhXCd9wKVml-eH1fPWWTH_b326hHKqMtEnu3CcHEu2QS-JsiGmt3nDdsMM7VsxM768oGoegrBIN4FKkIJIM69RTnzk3sZ_6crGF56uKBSCCKR3vf5nQsB1CC9GMZErSd92wMalA6t-_rE13ZswNp6auTdKb4CH4tKjUw6XqSDSNj05G9QHoc_SN8S3PvggkJeQRHU20vI3cONGIa39V-ocCq0BuXJz0hotFhAp3cD-rURanSsox6QWunnfj6gU_nZBIKIvx8bT5PP7K1C9-zFn9QPjB_-pFBEZd9_gs447MQiWbQJbvMco7E3fWxWQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:4000/rackets/64f3a180784b0b6d4ddd8fe6",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["rackets", "64f3a180784b0b6d4ddd8fe6"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "render getRacket",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFhMDhlN2M3ODNkYjhjOGFjNGNhNzJhZjdmOWRkN2JiMzk4ZjE2ZGMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDk1MzkzMCwidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0OTUzOTMwLCJleHAiOjE2OTQ5NTc1MzAsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.GKZ08lZIklCbOyTSeNLYGHsVOhXCd9wKVml-eH1fPWWTH_b326hHKqMtEnu3CcHEu2QS-JsiGmt3nDdsMM7VsxM768oGoegrBIN4FKkIJIM69RTnzk3sZ_6crGF56uKBSCCKR3vf5nQsB1CC9GMZErSd92wMalA6t-_rE13ZswNp6auTdKb4CH4tKjUw6XqSDSNj05G9QHoc_SN8S3PvggkJeQRHU20vI3cONGIa39V-ocCq0BuXJz0hotFhAp3cD-rURanSsox6QWunnfj6gU_nZBIKIvx8bT5PP7K1C9-zFn9QPjB_-pFBEZd9_gs447MQiWbQJbvMco7E3fWxWQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jose-vera-final-project-202307-bcn.onrender.com/rackets/64f3a180784b0b6d4ddd8fe6",
+          "protocol": "https",
+          "host": ["jose-vera-final-project-202307-bcn", "onrender", "com"],
+          "path": ["rackets", "64f3a180784b0b6d4ddd8fe6"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "modifyRacket",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFhMDhlN2M3ODNkYjhjOGFjNGNhNzJhZjdmOWRkN2JiMzk4ZjE2ZGMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NTA1NTgzMiwidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk1MDU1ODMyLCJleHAiOjE2OTUwNTk0MzIsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.MMUj1-KeYGIhtYuFK7MTD77GP78hBCWktL0ITDMYodabTfvGOwB2S661k9maRgN4fMmctqXkmIbQYcO95VAWqAgzQpSe0CdqCuOm7ejvSCgLC4XAsMB1VfaarHjsMastWvjVXx4nWTYaT7JWUkNatJem7ru9Mak0FBCA7XVt8Cnp1GABoKvPKwrfaDhoy6Um4R0Nrf2hCD0Q3EI2eo8qsea53hugDamNz37N7KQLytoZKFZc_rvQiBoNvHelhI-3kDzVJ8xSJUU1pWLz30ZIKdhL6Ihpf6SW--xpYPTXxbowPQOLpSXxzGPN0ouY8giUC9kk1I3XRXALwqWrTd6ynA",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"64f3a180784b0b6d4ddd8fe2\"\r\n  },\r\n  \"control\": 10,\r\n  \"description\": \"Its low balance also makes it very easy to use, and probably part of the reason Momo has been able to pull off so many amazing “tweeners”.\",\r\n  \"favorite\": false,\r\n  \"image\": \"https://cdn.discordapp.com/attachments/1150483066259775582/1151422447099330560/MomoPuma.webp\",\r\n  \"material\": \"Soft EVA\",\r\n  \"name\": \"Puma SolarATTACK Momo\",\r\n  \"power\": 8,\r\n  \"shape\": \"Round shape\",\r\n  \"weight\": 370,\r\n  \"user\": {\r\n    \"$oid\": \"64fafa72adb338f7af6830f5\"\r\n  }\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:4000/rackets/64f3a180784b0b6d4ddd8fe2",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "4000",
+          "path": ["rackets", "64f3a180784b0b6d4ddd8fe2"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "render modifyRacket",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImFhMDhlN2M3ODNkYjhjOGFjNGNhNzJhZjdmOWRkN2JiMzk4ZjE2ZGMiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiSm9zZSBNYW51ZWwgVmVyYSIsInBpY3R1cmUiOiJodHRwczovL2F2YXRhcnMuZ2l0aHVidXNlcmNvbnRlbnQuY29tL3UvMTE1NDE5MDIzP3Y9NCIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9yYWNrZXRzLTJmZGIxIiwiYXVkIjoicmFja2V0cy0yZmRiMSIsImF1dGhfdGltZSI6MTY5NDk1MzkzMCwidXNlcl9pZCI6ImZKVzgzYzdaS25nWW9BVDdFUUlWVm1PbXc2cDEiLCJzdWIiOiJmSlc4M2M3WktuZ1lvQVQ3RVFJVlZtT213NnAxIiwiaWF0IjoxNjk0OTUzOTMwLCJleHAiOjE2OTQ5NTc1MzAsImVtYWlsIjoiam9zZW1hbnVlbHZlcmExOTkxQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJnaXRodWIuY29tIjpbIjExNTQxOTAyMyJdLCJlbWFpbCI6WyJqb3NlbWFudWVsdmVyYTE5OTFAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ2l0aHViLmNvbSJ9fQ.GKZ08lZIklCbOyTSeNLYGHsVOhXCd9wKVml-eH1fPWWTH_b326hHKqMtEnu3CcHEu2QS-JsiGmt3nDdsMM7VsxM768oGoegrBIN4FKkIJIM69RTnzk3sZ_6crGF56uKBSCCKR3vf5nQsB1CC9GMZErSd92wMalA6t-_rE13ZswNp6auTdKb4CH4tKjUw6XqSDSNj05G9QHoc_SN8S3PvggkJeQRHU20vI3cONGIa39V-ocCq0BuXJz0hotFhAp3cD-rURanSsox6QWunnfj6gU_nZBIKIvx8bT5PP7K1C9-zFn9QPjB_-pFBEZd9_gs447MQiWbQJbvMco7E3fWxWQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"_id\": {\r\n    \"$oid\": \"6508343acddb42ca689624a0\"\r\n  },\r\n  \"name\": \"Raqueta to guapa\",\r\n  \"shape\": \"Tear shape\",\r\n  \"weight\": 349,\r\n  \"material\": \"Soft EVA\",\r\n  \"power\": 4,\r\n  \"control\": 6,\r\n  \"description\": \"Next time, description in english plz:Increíble raqueta súper barata\",\r\n  \"image\": \"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbYXoIxGVdJeh3qZ2nPRqrcuYNeBIl9qG4ng&usqp=CAU\",\r\n  \"user\": {\r\n    \"$oid\": \"64febc1906d45a5eeae052b4\"\r\n  },\r\n  \"__v\": 0\r\n}"
+        },
+        "url": {
+          "raw": "https://jose-vera-final-project-202307-bcn.onrender.com/rackets/6508343acddb42ca689624a0",
+          "protocol": "https",
+          "host": ["jose-vera-final-project-202307-bcn", "onrender", "com"],
+          "path": ["rackets", "6508343acddb42ca689624a0"]
         }
       },
       "response": []
