@@ -112,7 +112,7 @@ export const modifyRacketById = async (
     const { racketId } = req.params;
 
     const modifiedRacket = await Racket.findByIdAndUpdate(
-      racketId,
+      { _id: racketId },
       {
         favorite: !favorite,
       },
