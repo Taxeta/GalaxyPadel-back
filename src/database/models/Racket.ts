@@ -35,7 +35,7 @@ const racketSchema = new Schema({
   },
   favorite: {
     type: Boolean,
-    require: false,
+    default: false,
   },
   user: {
     type: Schema.Types.ObjectId,
