@@ -35,6 +35,7 @@ https://jose-vera-final-project-202307-bcn.onrender.com/
 `npm build:dev: "tsc -w"`
 
 :mag:Test
+
 `npm run test: "jest"`
 
 `npm run test:dev: "jest --watchAll"`
@@ -42,21 +43,32 @@ https://jose-vera-final-project-202307-bcn.onrender.com/
 ## Endpoints
 
 [GET]/rackets
+
 codeStatus: `200`
 errorMessage: `404`, `Can't retrieve rackets`
+
 [POST]/create
+
 codeStatus: `201`
 errorMessage: `500`, `Could not create the racket`
+
 [DELETE]/rackets/:racketsId
+
 codeStatus: `200`
+
 errorMessage: `500` , `Could not delete racket`
+
 [MODIFY]/rackets/:racketsId
+
 codeStatus: `204`
-errorMessage:`500` , `Can't modify the racket`
+
+errorMessage: `500` , `Can't modify the racket`
 
 [GET]/rackets/:racketsId
+
 codeStatus: `204`
-errorMessage:`500` , `Can't retrieve the racket`
+
+errorMessage: `500` , `Can't retrieve the racket`
 
 ## Functionality
 
