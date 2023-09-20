@@ -1,10 +1,16 @@
 ## Galaxy Padel | Backend
 
-This folder contains the Backend of a Frontend application called Galaxy Padel. It consists of a part that collects data from a server hosted with the MongoDB service in order to serve this data to the Frontend part of the application.
+This folder contains the Backend of a FullStack application called Galaxy Padel.
+
+It consists of a part that collects data from a server hosted with the MongoDB service in order to serve this data to the Frontend part of the application.
+
+The MERN Stack is MongoDB, React, Express and Node.js.
 
 :yellow_circle: :large_blue_circle: :yellow_circle: :large_blue_circle: :yellow_circle: :large_blue_circle:
 
-The stack used in this project consists of **Typescript** as the main language and Eslint and Prettier to structure the code correctly. **Firebase** to authenticate users and Cors to allow connections between the application and third-party websites where we host our server, which in this case is Render.
+The stack used in this project consists of **Typescript** as the main language.
+
+Eslint as linting open source code and Prettier to structure the code correctly. **Firebase** to authenticate users and Cors to allow connections between the application and third-party websites where we host our server, which in this case is Render.
 
 Husky and git-hub actions to manage file uploads to the git environment.
 
@@ -21,16 +27,36 @@ https://jose-vera-final-project-202307-bcn.onrender.com/
 ## Scripts
 
 :desktop_computer:Set up server locally and build
-npm start: "node ."
 
-npm run build: "tsc",
+`npm start: "node ."`
 
-npm build:dev: "tsc -w",
+`npm run build: "tsc"`
+
+`npm build:dev: "tsc -w"`
 
 :mag:Test
-npm run test: "jest"
+`npm run test: "jest"`
 
-npm run test:dev: "jest --watchAll"
+`npm run test:dev: "jest --watchAll"`
+
+## Endpoints
+
+[GET]/rackets
+codeStatus: `200`
+errorMessage: `404`, `Can't retrieve rackets`
+[POST]/create
+codeStatus: `201`
+errorMessage: `500`, `Could not create the racket`
+[DELETE]/rackets/:racketsId
+codeStatus: `200`
+errorMessage: `500` , `Could not delete racket`
+[MODIFY]/rackets/:racketsId
+codeStatus: `204`
+errorMessage:`500` , `Can't modify the racket`
+
+[GET]/rackets/:racketsId
+codeStatus: `204`
+errorMessage:`500` , `Can't retrieve the racket`
 
 ## Functionality
 
