@@ -37,6 +37,10 @@ const racketSchema = new Schema({
     type: Boolean,
     default: false,
   },
+  visibility: {
+    type: Boolean,
+    default: false,
+  },
   user: {
     type: Schema.Types.ObjectId,
     ref: "User",

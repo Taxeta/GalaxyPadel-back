@@ -16,7 +16,9 @@ export const getRackets = async (
   try {
     const _id = req.userId;
 
-    const rackets = await Racket.find<RacketStructure[]>({ user: _id })
+    const rackets = await Racket.find<RacketStructure[]>({
+      $or: [{ user: _id }, { visibility: true }],
+    })
       .limit(10)
       .exec();
 

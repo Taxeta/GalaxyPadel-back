@@ -17,6 +17,7 @@ export interface RacketStructure {
   description: string;
   image: string;
   favorite: boolean;
+  visibility: boolean;
   user: string;
   __v?: number;
 }
@@ -31,6 +32,7 @@ export interface ReceivedRacket {
   description: string;
   image: string;
   favorite: boolean;
+  visibility: boolean;
 }
 
 export interface AuthRequest extends Request {
