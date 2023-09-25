@@ -16,7 +16,9 @@ export const getRackets = async (
   try {
     const _id = req.userId;
 
-    const rackets = await Racket.find<RacketStructure[]>({ user: _id })
+    const rackets = await Racket.find<RacketStructure[]>({
+      $or: [{ user: _id }, { visibility: true }],
+    })
       .limit(10)
       .exec();
 
@@ -108,14 +110,22 @@ export const modifyRacketById = async (
   next: NextFunction,
 ) => {
   try {
-    const { favorite } = req.body;
+    const { favorite, visibility } = req.body;
     const { racketId } = req.params;
+
+    const updateModify: { favorite?: boolean; visibility?: boolean } = {};
+
+    if (typeof favorite !== "undefined") {
+      updateModify.favorite = !favorite;
+    }
+
+    if (typeof visibility !== "undefined") {
+      updateModify.visibility = !visibility;
+    }
 
     const modifiedRacket = await Racket.findByIdAndUpdate(
       { _id: racketId },
-      {
-        favorite: !favorite,
-      },
+      updateModify,
       {
         returnDocument: "after",
       },

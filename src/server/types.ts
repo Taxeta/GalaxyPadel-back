@@ -17,6 +17,7 @@ export interface RacketStructure {
   description: string;
   image: string;
   favorite: boolean;
+  visibility: boolean;
   user: string;
   __v?: number;
 }
@@ -31,6 +32,7 @@ export interface ReceivedRacket {
   description: string;
   image: string;
   favorite: boolean;
+  visibility: boolean;
 }
 
 export interface AuthRequest extends Request {
@@ -50,7 +52,7 @@ export interface AuthRequestWithBooleanBody
   extends Request<
     Record<string, unknown>,
     Record<string, unknown>,
-    { favorite: boolean }
+    { favorite: boolean; visibility: boolean }
   > {
   userId?: string;
 }

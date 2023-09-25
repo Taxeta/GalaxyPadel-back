@@ -22,6 +22,7 @@ export const mockRackets: RacketStructure[] = [
     image:
       "https://cdn.discordapp.com/attachments/1150483066259775582/1151422447099330560/MomoPuma.webp",
     favorite: false,
+    visibility: false,
     user: idRacketMock,
   },
   {
@@ -37,6 +38,7 @@ export const mockRackets: RacketStructure[] = [
     image:
       "https://cdn.discordapp.com/attachments/1150483066259775582/1151422444540809246/AdidasMetalbone.webp",
     favorite: false,
+    visibility: false,
     user: idRacketMock,
   },
 ];
@@ -55,6 +57,7 @@ export const mockRackets1: RacketStructure[] = [
     image:
       "https://cdn.discordapp.com/attachments/1150483066259775582/1151422447099330560/MomoPuma.webp",
     favorite: false,
+    visibility: false,
     user: userId,
   },
 ];
@@ -71,6 +74,7 @@ export const receivedRacketMock: ReceivedRacket = {
   image:
     "https://cdn.discordapp.com/attachments/1150483066259775582/1151422447099330560/MomoPuma.webp",
   favorite: false,
+  visibility: false,
 };
 
 export const newReceivedMock: ReceivedRacket = {
@@ -85,6 +89,7 @@ export const newReceivedMock: ReceivedRacket = {
   image:
     "https://cdn.discordapp.com/attachments/1150483066259775582/1151422447099330560/MomoPuma.webp",
   favorite: false,
+  visibility: false,
 };
 
 export const postMock: RacketStructure = {
@@ -99,6 +104,7 @@ export const postMock: RacketStructure = {
   image:
     "https://cdn.discordapp.com/attachments/1150483066259775582/1151422447099330560/MomoPuma.webp",
   favorite: false,
+  visibility: false,
   _id: idRacketMock,
   __v: 0,
   user: userId,
@@ -118,6 +124,7 @@ export const getOneMock: RacketStructure[] = [
     image:
       "https://cdn.discordapp.com/attachments/1150483066259775582/1151422447099330560/MomoPuma.webp",
     favorite: false,
+    visibility: false,
     user: userId,
     __v: 0,
   },
