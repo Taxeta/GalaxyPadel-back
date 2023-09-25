@@ -50,7 +50,7 @@ export interface AuthRequestWithBooleanBody
   extends Request<
     Record<string, unknown>,
     Record<string, unknown>,
-    { favorite: boolean }
+    { favorite: boolean; visibility: boolean }
   > {
   userId?: string;
 }

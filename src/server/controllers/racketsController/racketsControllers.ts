@@ -108,14 +108,22 @@ export const modifyRacketById = async (
   next: NextFunction,
 ) => {
   try {
-    const { favorite } = req.body;
+    const { favorite, visibility } = req.body;
     const { racketId } = req.params;
+
+    const updateModify: { favorite?: boolean; visibility?: boolean } = {};
+
+    if (typeof favorite !== "undefined") {
+      updateModify.favorite = !favorite;
+    }
+
+    if (typeof visibility !== "undefined") {
+      updateModify.visibility = !visibility;
+    }
 
     const modifiedRacket = await Racket.findByIdAndUpdate(
       { _id: racketId },
-      {
-        favorite: !favorite,
-      },
+      updateModify,
       {
         returnDocument: "after",
       },
