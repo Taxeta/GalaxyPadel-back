@@ -2,7 +2,7 @@ import { Schema, model } from "mongoose";
 import { type UserStructure } from "../../server/types.js";
 
 const userSchema = new Schema<UserStructure>({
-  name: {
+  displayName: {
     type: String,
     required: true,
   },

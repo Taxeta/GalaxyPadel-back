@@ -2,7 +2,7 @@ import { type Request } from "express";
 
 export interface UserStructure {
   _id: string;
-  name: string;
+  displayName: string;
   authId: string;
 }
 
@@ -37,6 +37,7 @@ export interface ReceivedRacket {
 
 export interface AuthRequest extends Request {
   userId?: string;
+  displayName?: string;
 }
 
 export interface AuthRequestWithBody
