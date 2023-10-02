@@ -17,22 +17,24 @@ const auth = async (req: AuthRequest, _res: Response, next: NextFunction) => {
       return;
     }
 
-    const { uid } = await admin.auth(firebaseApp).verifyIdToken(token);
+    const { uid, name } = await admin.auth(firebaseApp).verifyIdToken(token);
 
-    const user = await User.findOne<UserStructure>({ authId: uid }).exec();
+    let user = await User.findOne<UserStructure>({ authId: uid }).exec();
 
     if (!user) {
-      const userError = new CustomError(
-        "User id not found",
-        404,
-        "User id not found",
-      );
-      next(userError);
-
-      return;
+      const newUser = new User({
+        authId: uid,
+      });
+      user = await newUser.save();
     }
 
-    req.userId = user._id;
+    if (user instanceof User && name) {
+      user.displayName = name as string;
+      await user.save();
+    }
+
+    req.userId = user?._id;
+    req.displayName = user?.displayName;
 
     next();
   } catch (error: unknown) {

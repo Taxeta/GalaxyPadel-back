@@ -8,7 +8,7 @@ export const mockAuthId = "asdsad5sad7";
 export const userMock: UserStructure[] = [
   {
     _id: userId,
-    name: "Arturo",
+    displayName: "Arturo",
     authId: mockAuthId,
   },
 ];
