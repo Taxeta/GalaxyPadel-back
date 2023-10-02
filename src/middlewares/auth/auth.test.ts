@@ -35,7 +35,7 @@ describe("Given an auth middleware", () => {
       const user: UserStructure = {
         _id: id,
         authId: token.uid,
-        name: "Arturo",
+        displayName: "Arturo",
       };
 
       User.findOne = jest
@@ -54,7 +54,9 @@ describe("Given an auth middleware", () => {
         header: jest.fn().mockReturnValue("token"),
       };
 
-      const userError = new Error("User id not found");
+      const userError = new Error(
+        "User validation failed: displayName: Path `displayName` is required.",
+      );
 
       admin.auth = jest.fn().mockReturnValue({
         verifyIdToken: jest.fn().mockResolvedValue(token),
