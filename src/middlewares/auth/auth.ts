@@ -3,7 +3,7 @@ import firebaseApp from "../../server/firebase.js";
 import CustomError from "../../CustomError/CustomError.js";
 import admin from "firebase-admin";
 import User from "../../database/models/User.js";
-import { type AuthRequest, type UserStructure } from "../../server/types.js";
+import { type AuthRequest } from "../../server/types.js";
 
 const auth = async (req: AuthRequest, _res: Response, next: NextFunction) => {
   try {
@@ -19,18 +19,25 @@ const auth = async (req: AuthRequest, _res: Response, next: NextFunction) => {
 
     const { uid, name } = await admin.auth(firebaseApp).verifyIdToken(token);
 
-    let user = await User.findOne<UserStructure>({ authId: uid }).exec();
+    let user = await User.findOne({ authId: uid }).exec();
 
     if (!user) {
+      const displayName = name ? (name as string) : "DefaultName";
+      console.log("Creating new user:", displayName);
+
       const newUser = new User({
         authId: uid,
+        displayName,
       });
-      user = await newUser.save();
-    }
-
-    if (user instanceof User && name) {
+      await newUser.save();
+      user = newUser;
+      console.log("User created:", user);
+    } else if (name) {
       user.displayName = name as string;
+      console.log("Updating user:", user.displayName);
+
       await user.save();
+      console.log("User updated:", user);
     }
 
     req.userId = user?._id;
