@@ -40,6 +40,13 @@ export interface AuthRequest extends Request {
   displayName?: string;
 }
 
+export interface GetRacketsRequest extends AuthRequest {
+  query: {
+    page?: string | undefined;
+    pageSize?: string | undefined;
+  };
+}
+
 export interface AuthRequestWithBody
   extends Request<
     Record<string, unknown>,

@@ -23,7 +23,6 @@ const auth = async (req: AuthRequest, _res: Response, next: NextFunction) => {
 
     if (!user) {
       const displayName = name ? (name as string) : "DefaultName";
-      console.log("Creating new user:", displayName);
 
       const newUser = new User({
         authId: uid,
@@ -31,13 +30,10 @@ const auth = async (req: AuthRequest, _res: Response, next: NextFunction) => {
       });
       await newUser.save();
       user = newUser;
-      console.log("User created:", user);
     } else if (name) {
       user.displayName = name as string;
-      console.log("Updating user:", user.displayName);
 
       await user.save();
-      console.log("User updated:", user);
     }
 
     req.userId = user?._id;
