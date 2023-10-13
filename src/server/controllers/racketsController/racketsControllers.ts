@@ -6,20 +6,23 @@ import {
   type AuthRequest,
   type AuthRequestWithBody,
   type AuthRequestWithBooleanBody,
+  type GetRacketsRequest,
 } from "../../types.js";
 
 export const getRackets = async (
-  req: AuthRequest,
+  req: GetRacketsRequest,
   res: Response,
   next: NextFunction,
 ): Promise<void> => {
   try {
-    const _id = req.userId;
+    const page = parseInt(req.query.page ?? "1", 10);
+    const pageSize = parseInt(req.query.pageSize ?? "10", 10);
 
     const rackets = await Racket.find<RacketStructure[]>({
-      $or: [{ user: _id }, { visibility: true }],
+      $or: [{ user: req.userId }, { visibility: true }],
     })
-      .limit(10)
+      .skip((page - 1) * pageSize)
+      .limit(pageSize)
       .exec();
 
     res.status(200).json({ rackets });

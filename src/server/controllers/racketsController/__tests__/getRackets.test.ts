@@ -3,13 +3,19 @@ import { getRackets } from "../racketsControllers.js";
 import Racket from "../../../../database/models/Racket.js";
 import { mockRackets } from "../../../../mocks/mocksRackets.js";
 import CustomError from "../../../../CustomError/CustomError.js";
-import { type AuthRequest } from "../../../types.js";
+import { type GetRacketsRequest } from "../../../types.js";
 
 beforeEach(() => {
   jest.clearAllMocks();
 });
 
-const req: Partial<AuthRequest> = {};
+jest.mock("../../../../database/models/Racket.js", () => ({
+  find: jest.fn(),
+}));
+
+const req: Partial<GetRacketsRequest> = {
+  query: { page: "1", pageSize: "10" },
+};
 const res: Partial<Response> = {
   status: jest.fn().mockReturnThis(),
   json: jest.fn(),
@@ -18,7 +24,8 @@ const next = jest.fn();
 
 describe("Given a getRackets controller", () => {
   describe("When it receives a response", () => {
-    Racket.find = jest.fn().mockReturnValue({
+    (Racket.find as jest.Mock).mockReturnValue({
+      skip: jest.fn().mockReturnThis(),
       limit: jest.fn().mockReturnThis(),
       exec: jest.fn().mockResolvedValue(mockRackets),
     });
@@ -27,7 +34,7 @@ describe("Given a getRackets controller", () => {
       const expectedStatusCode = 200;
 
       await getRackets(
-        req as AuthRequest,
+        req as GetRacketsRequest,
         res as Response,
         next as NextFunction,
       );
@@ -37,7 +44,7 @@ describe("Given a getRackets controller", () => {
 
     test("Then it should call its method json with two rackets", async () => {
       await getRackets(
-        req as AuthRequest,
+        req as GetRacketsRequest,
         res as Response,
         next as NextFunction,
       );
@@ -63,7 +70,7 @@ describe("Given a getRackets controller", () => {
       };
 
       await getRackets(
-        req as AuthRequest,
+        req as GetRacketsRequest,
         res as Response,
         next as NextFunction,
       );
